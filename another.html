@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another HTML</title>
+</head>
+<body>
+    <!-- Container to display the received item content -->
+    <div id="receivedItemContainer"></div>
+
+    <script>
+        // Retrieve the content from localStorage
+        var itemContent = localStorage.getItem('itemContent');
+        if (itemContent) {
+            // Display the received item content in the container
+            document.getElementById('receivedItemContainer').innerHTML = itemContent;
+        }
+    </script>
+</body>
+</html>
